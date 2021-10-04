@@ -1,7 +1,7 @@
 const express = require('express');
 const routes = require('./routes')
 const bodyParser = require('body-parser');
-require('./models/asociations');
+// require('./models/asociations');
 
 // conexion a la base de datos
 const db = require('./config/db');
@@ -23,5 +23,4 @@ app.use(bodyParser.urlencoded({extended: true}))
 
 app.use('/', routes());
 const Port = 8000;
-const Port1 = 5000;
 app.listen(Port);

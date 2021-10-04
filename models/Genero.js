@@ -1,6 +1,6 @@
 const Sequelize = require('sequelize');
-
 const db = require('../config/db');
+const Peli_Serie = require('./Peli_Serie')
 
 const Genero = db.define('Genero', {
     id: {
@@ -18,5 +18,5 @@ const Genero = db.define('Genero', {
         type: Sequelize.INTEGER
     }
 });
-
+// Genero.belongsTo(Peli_Serie);
 module.exports = Genero;
