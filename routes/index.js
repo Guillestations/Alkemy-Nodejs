@@ -73,6 +73,7 @@ module.exports = function () {
         .escape(),
     ],
     auth,
+    pelisController.subirArchivo,
     pelisController.nuevoPeliSerie
   );
   router.put("/movies/:id", auth, pelisController.updatePelisSeries);

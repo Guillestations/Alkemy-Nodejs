@@ -12,7 +12,7 @@ const Peli_Serie = db.define("Peli_Serie", {
     type: Sequelize.STRING,
   },
   fecha: {
-    type: Sequelize.DATE,
+    type: Sequelize.STRING,
   },
   calificacion: {
     type: Sequelize.INTEGER,

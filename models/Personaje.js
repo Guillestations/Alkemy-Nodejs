@@ -24,7 +24,7 @@ const Personaje = db.define("Personaje", {
     type: Sequelize.STRING,
   },
 });
-Personaje.belongsTo(Peli_Serie);
-Peli_Serie.hasMany(Personaje);
+// Personaje.belongsTo(Peli_Serie);
+// Peli_Serie.hasMany(Personaje);
 
 module.exports = Personaje;
